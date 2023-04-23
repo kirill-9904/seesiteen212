@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Отзывчивый с @media — schoolsw3.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+   * {
+    box-sizing:border-box;
+   } 
+
+   .left {
+    background-color:#2196F3;
+    padding:20px;
+    float:left;
+    width:20%; /* Ширина составляет 20%, по умолчанию */
+   }
+
+   .main {
+    background-color:#f1f1f1;
+    padding:20px;
+    float:left;
+    width:60%; /* Ширина составляет 60%, по умолчанию */
+   }
+
+ .right {
+    background-color:#4CAF50;
+    padding:20px;
+    float:left;
+    width:20%; /* Ширина составляет 20%, по умолчанию */
+   }
+
+   /* Используйте медиа-запрос, чтобы добавить точку останова в 800px: */
+   @media screen and (max-width:800px) {
+    .left, .main, .right {
+     width:100%; /* Ширина составляет 100%, когда видовой экран 800px или меньше */
+    }
+   }
+  </style>
+ </head>
+ <body>
+ 
+  <h1>HTML5 Отзывчивый с @media</h1>
+
+  <h2>Медиа запросы</h2>
+  <p>Измените размер окна браузера.</p>
+
+  <p>Убедитесь, что вы достигли точки останова в 800px при изменении размера этого кадра.</p>
+
+  <div class="left">
+   <p>Левое меню</p>
+  </div>
+
+  <div class="main">
+   <p>Основное содержание</p>
+  </div>
+
+  <div class="right">
+   <p>Правое содержание</p>
+  </div>
+
+ </body>
+</html>
+
