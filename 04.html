@@ -1,64 +1,30 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <title>Отзывчивый с @media — schoolsw3.com</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-   * {
-    box-sizing:border-box;
-   } 
-
-   .left {
-    background-color:#2196F3;
-    padding:20px;
-    float:left;
-    width:20%; /* Ширина составляет 20%, по умолчанию */
-   }
-
-   .main {
-    background-color:#f1f1f1;
-    padding:20px;
-    float:left;
-    width:60%; /* Ширина составляет 60%, по умолчанию */
-   }
-
- .right {
-    background-color:#4CAF50;
-    padding:20px;
-    float:left;
-    width:20%; /* Ширина составляет 20%, по умолчанию */
-   }
-
-   /* Используйте медиа-запрос, чтобы добавить точку останова в 800px: */
-   @media screen and (max-width:800px) {
-    .left, .main, .right {
-     width:100%; /* Ширина составляет 100%, когда видовой экран 800px или меньше */
-    }
-   }
-  </style>
- </head>
- <body>
+<!DOCTYPE html> 
+<html> 
  
-  <h1>HTML5 Отзывчивый с @media</h1>
-
-  <h2>Медиа запросы</h2>
-  <p>Измените размер окна браузера.</p>
-
-  <p>Убедитесь, что вы достигли точки останова в 800px при изменении размера этого кадра.</p>
-
-  <div class="left">
-   <p>Левое меню</p>
-  </div>
-
-  <div class="main">
-   <p>Основное содержание</p>
-  </div>
-
-  <div class="right">
-   <p>Правое содержание</p>
-  </div>
-
- </body>
+<body> 
+ 
+      
+<div style="text-align:center">
+       
+        <h2 style="font-size: 1vw;">Наши работы</h2>
+        
+            <img src="https://avatars.mds.yandex.net/i?id=67a1f075870f489c970cf83a11cff0dc4f25d1f5-6962773-images-thumbs&n=13" media="(max-width: 1500px)">
+       
+       
+            <img src="https://avatars.mds.yandex.net/i?id=9df20214348c14679bcb4a2a0c18a79a07ec490b-4859319-images-thumbs&n=13" media="(max-width: 1500px)">
+        
+        
+            <img src="https://avatars.mds.yandex.net/i?id=0ed45bf11b90d772cb60e627fa71cd821255957a-9036239-images-thumbs&n=13" media="(max-width: 1500px)">
+        
+        
+            <img src="https://avatars.mds.yandex.net/i?id=c15a31d94b6272d602067457c36d7b2f85819b05-9151250-images-thumbs&n=13" media="(max-width: 1500px)">
+        
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">Г—</span>
+        
+        <img id="expandedImg" style="width:50%">
+       
+        </div>
+</body> 
+ 
 </html>
-
