@@ -1,232 +1,463 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+<html> 
 
-        .menu-main {
-           
-            list-style: none;
-         
-            margin: 40px 0 5px;
-           
-            padding: 25px 0 5px;
-           
-            text-align: center;
-            background: white;
-       
-        }
+ 
 
-        .menu-main li {
-            display: inline-block;
-        }
+<head> 
 
-        .menu-main li:after {
-            content: "|";
-            color: #606060;
-            display: inline-block;
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <style> 
+
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); 
+
+ 
+
+        .menu-main { 
+
+            
+
+            list-style: none; 
+
           
-            vertical-align: top;
-           
-        }
 
-        .menu-main li:last-child:after {
-            content: none;
-        }
+            margin: 40px 0 5px; 
 
-     
-        .menu-main a {
             
-            text-decoration: none;
-           
-            font-family: 'Ubuntu Condensed', sans-serif;
-            
-            letter-spacing: 2px;
-            
-            position: relative;
-            
-            padding-bottom: 20px;
-          
-            margin: 0 34px 0 30px;
-            font-size: 17px;
-           
-            text-transform: uppercase;
-           
-            display: inline-block;
-            transition: color .2s;
 
-        }
+            padding: 25px 0 5px; 
 
-        .menu-main a,
-        .menu-main a:visited {
-            color: #9d999d;
-        }
+            
+
+            text-align: center; 
+
+            background: white; 
+
+        
+
+        } 
+
+ 
+
+        .menu-main li { 
+
+            display: inline-block; 
+
+        } 
+
+ 
+
+        .menu-main li:after { 
+
+            content: ""; 
+
+            color: #606060; 
+
+            display: inline-block; 
+
+           
+
+            vertical-align: top; 
+
+            
+
+        } 
+
+ 
+
+        .menu-main li:last-child:after { 
+
+            content: none; 
+
+        } 
+
+ 
 
       
 
+        .menu-main a { 
 
-        .menu-main a:before,
-    
-        .menu-main a:after {
-            content: "";
+             
+
+            text-decoration: none; 
+
+            
+
+            font-family: 'Ubuntu Condensed', sans-serif; 
+
+             
+
+            letter-spacing: 2px; 
+
+             
+
+            position: relative; 
+
+             
+
+            padding-bottom: 20px; 
+
            
-            position: absolute;
-            height: 4px;
-            top: auto;
-            right: 50%;
-            bottom: -5px;
-            left: 50%;
-            background: #32302f;
-            transition: .8s;
-           
-        }
+
+            margin: 0 34px 0 30px; 
+
+            font-size: 17px; 
+
+            
+
+            text-transform: uppercase; 
+
+            
+
+            display: inline-block; 
+
+            transition: color .2s; 
+
+ 
+
+        } 
+
+ 
+
+        .menu-main a, 
+
+        .menu-main a:visited { 
+
+            color: #9d999d; 
+
+        } 
+
+ 
+
+       
+
+ 
+
+ 
+
+        .menu-main a:before, 
 
      
-        .menu-main a:hover:before,
-        .menu-main .current:before {
-            left: 0;
-        }
 
+        .menu-main a:after { 
 
-        .menu-main a:hover:after,
-        .menu-main .current:after {
-            right: 0;
-        }
+            content: ""; 
 
-        @media (max-width: 550px) {
-            .menu-main {
-                padding-top: 0;
-            }
-
-            .menu-main li {
-                display: block;
-            }
-
-            .menu-main li:after {
-                content: none;
-            }
-
-            .menu-main a {
-                padding: 25px 0 20px;
-                margin: 0 30px;
-            }
-        }
-
-        * {
             
-            box-sizing: border-box;
+
+            position: absolute; 
+
+            height: 4px; 
+
+            top: auto; 
+
+            right: 50%; 
+
+            bottom: -5px; 
+
+            left: 50%; 
+
+            background: #32302f; 
+
+            transition: .8s; 
+
             
-        }
 
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
+        } 
 
-        
-        .column {
-            float: left;
-            width: 25%;
-            padding: 10px;
-        }
-        .column img {
-            opacity: 0.8;
-          
-            cursor: pointer;
-          
-        }
+ 
 
-        .column img:hover {
-            opacity: 1;
-        }
+      
 
-        .row:after {
-            content: "";
-            display: table;
-            
-            clear: both;
+        .menu-main a:hover:before, 
+
+        .menu-main .current:before { 
+
+            left: 0; 
+
+        } 
+
+ 
+
+ 
+
+        .menu-main a:hover:after, 
+
+        .menu-main .current:after { 
+
+            right: 0; 
+
+        } 
+
+ 
+
+        @media (max-width: 550px) { 
+
+            .menu-main { 
+
+                padding-top: 0; 
+
+            } 
+
+ 
+
+            .menu-main li { 
+
+                display: block; 
+
+            } 
+
+ 
+
+            .menu-main li:after { 
+
+                content: none; 
+
+            } 
+
+ 
+
+            .menu-main a { 
+
+                padding: 25px 0 20px; 
+
+                margin: 0 30px; 
+
+            } 
+
+        } 
+
+ 
+
+        * { 
+
+             
+
+            box-sizing: border-box; 
+
+             
+
+        } 
+
+ 
+
+        body { 
+
+            margin: 0; 
+
+            font-family: Arial; 
+
+        } 
+
+ 
+
          
-        }
 
-       
-        .container {
-            position: relative;
-            display: none;
-        }
+        .column { 
 
+            float: left; 
 
-       
-        .closebtn {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            color: red;
-            font-size: 35px;
-            cursor: pointer;
-        }
+            width: 25%; 
 
-        .button_for_change_color {
-            border-radius: 10px;
-            font-family: 'Ubuntu Condensed', sans-serif;
-            font-weight: 550;
-            text-transform: uppercase;
-            letter-spacing: 10px;
-            border-color: aliceblue;
-            color: #5a5a5a;
-            border: none;
-        }
-    </style>
-</head>
+            padding: 10px; 
 
-<body>
+        } 
 
-    <ul class="menu-main">
+        .column img { 
 
-        <li><a href="04.html"><h1 style="font-size: 7vw;">Наши работы</h1></a></li>
-        <li><a href="03.html"><h1 style="font-size: 7vw;">О нас</h1></a></li>
-        <li><a href="02.html"><h1 style="font-size: 7vw;">Контакты</h1></a></li>
-    </ul>
+            opacity: 0.8; 
 
-    <div style="text-align:center">
-       
-        <h2 style="font-size: 1vw;">Галерея наших лучших работ</h2>
+           
+
+            cursor: pointer; 
+
+           
+
+        } 
+
+ 
+
+        .column img:hover { 
+
+            opacity: 1; 
+
+        } 
+
+ 
+
+        .row:after { 
+
+            content: ""; 
+
+            display: table; 
+
+             
+
+            clear: both; 
+
+          
+
+        } 
+
+ 
+
         
-            <img src="https://avatars.mds.yandex.net/i?id=67a1f075870f489c970cf83a11cff0dc4f25d1f5-6962773-images-thumbs&n=13" media="(max-width: 1500px)">
-       
-       
-            <img src="https://avatars.mds.yandex.net/i?id=9df20214348c14679bcb4a2a0c18a79a07ec490b-4859319-images-thumbs&n=13" media="(max-width: 1500px)">
+
+        .container { 
+
+            position: relative; 
+
+            display: none; 
+
+        } 
+
+ 
+
+ 
+
         
+
+        .closebtn { 
+
+            position: absolute; 
+
+            top: 10px; 
+
+            right: 15px; 
+
+            color: red; 
+
+            font-size: 35px; 
+
+            cursor: pointer; 
+
+        } 
+
+ 
+
+        .button_for_change_color { 
+
+            border-radius: 10px; 
+
+            font-family: 'Ubuntu Condensed', sans-serif; 
+
+            font-weight: 550; 
+
+            text-transform: uppercase; 
+
+            letter-spacing: 10px; 
+
+            border-color: aliceblue; 
+
+            color: #5a5a5a; 
+
+            border: none; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+ 
+
+<body> 
+
+ 
+
+    <ul class="menu-main"> 
+
+ 
+
+        <li><a href="04.html"><h1>Наши работы</h1></a></li> 
+
+        <li><a href="03.html"><h1>О нас</h1></a></li> 
+
+        <li><a href="02.html"><h1>Контакты</h1></a></li> 
+
+    </ul> 
+
+ 
+
+    <div style="text-align:center"> 
+
         
-            <img src="https://avatars.mds.yandex.net/i?id=0ed45bf11b90d772cb60e627fa71cd821255957a-9036239-images-thumbs&n=13" media="(max-width: 1500px)">
-        
-        
-            <img src="https://avatars.mds.yandex.net/i?id=c15a31d94b6272d602067457c36d7b2f85819b05-9151250-images-thumbs&n=13" media="(max-width: 1500px)">
-        
-    <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">Г—</span>
-        
-        <img id="expandedImg" style="width:50%">
-       
-        </div>
+
+        <h2>Галерея наших лучших работ</h2> 
+
+         
+
+        <img src="https://avatars.mds.yandex.net/i?id=67a1f075870f489c970cf83a11cff0dc4f25d1f5-6962773-images-thumbs&n=13" media="(max-width: 1500px)"> 
+
+    
+
+    
+
+        <img src="https://avatars.mds.yandex.net/i?id=9df20214348c14679bcb4a2a0c18a79a07ec490b-4859319-images-thumbs&n=13" media="(max-width: 1500px)"> 
+
+     
+
+     
+
+        <img src="https://avatars.mds.yandex.net/i?id=0ed45bf11b90d772cb60e627fa71cd821255957a-9036239-images-thumbs&n=13" media="(max-width: 1500px)"> 
+
+     
+
+     
+
+        <img src="https://avatars.mds.yandex.net/i?id=c15a31d94b6272d602067457c36d7b2f85819b05-9151250-images-thumbs&n=13" media="(max-width: 1500px)"> 
+
+     
+
+<div class="container"> 
+
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">Г—</span> 
+
+     
+
+    <img id="expandedImg" style="width:50%"> 
+
+    
+
+    </div> 
 
 
-    <script> 
-                            }
-        function change_color() {
-            if (document.body.style.background == "black") {
-                document.body.style.background = "white";
-                document.body.style.color = "black";
-            } else {
-                document.body.style.color = "white";
-            }
-            document.body.style.background = "black";
-            document.body.style.color = "white";
 
-        }
-    </script>
 
-</body>
+
+<script>  
+
+                        } 
+
+    function change_color() { 
+
+        if (document.body.style.background == "black") { 
+
+            document.body.style.background = "white"; 
+
+            document.body.style.color = "black"; 
+
+        } else { 
+
+            document.body.style.color = "white"; 
+
+        } 
+
+        document.body.style.background = "black"; 
+
+        document.body.style.color = "white"; 
+
+
+
+    } 
+
+</script> 
+
+
+
+</body> 
+
+
 
 </html>
